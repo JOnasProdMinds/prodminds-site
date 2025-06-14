@@ -13,10 +13,17 @@
       color: #1a1a1a;
     }
     header {
-      background: #0b1c2c;
+      background: linear-gradient(to right, #0b1c2c, #003049);
       color: #fff;
       padding: 2rem;
       text-align: center;
+      position: relative;
+    }
+    header img {
+      max-width: 100px;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
     }
     header h1 {
       margin: 0;
@@ -25,7 +32,7 @@
     header p {
       margin-top: 0.5rem;
       font-size: 1.2rem;
-      color: #d1e7f5;
+      color: #c0e6ff;
     }
     section {
       padding: 3rem 2rem;
@@ -38,10 +45,17 @@
     h2 {
       color: #0b1c2c;
       margin-bottom: 1rem;
+      font-size: 1.8rem;
     }
     ul {
       list-style-type: disc;
       padding-left: 1.5rem;
+    }
+    .highlight {
+      background-color: #e6f9f4;
+      padding: 1rem;
+      border-left: 4px solid #00bfa6;
+      margin-bottom: 2rem;
     }
     footer {
       background: #0b1c2c;
@@ -54,15 +68,30 @@
       color: #00bfa6;
       text-decoration: none;
     }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      header img {
+        max-width: 70px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="/logo.png" alt="ProdMinds logo">
     <h1>ProdMinds</h1>
     <p>Product Management as a Service for Digital Companies</p>
   </header>
 
   <section class="about">
+    <div class="highlight">
+      <strong>🚀 Empowering innovation through structured execution.</strong>
+    </div>
     <h2>About Us</h2>
     <p>We help startups, scaleups, and innovation teams design, launch, and grow high-impact digital products. Whether you're building an MVP, improving your onboarding, or prioritizing features — we bring strategic thinking and hands-on execution.</p>
   </section>
