@@ -39,7 +39,7 @@
       max-width: 900px;
       margin: auto;
     }
-    .services, .about, .contact {
+    .services, .about, .contact, .intro-video {
       margin-bottom: 4rem;
     }
     h2 {
@@ -68,6 +68,12 @@
       color: #00bfa6;
       text-decoration: none;
     }
+    video {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8rem;
@@ -87,6 +93,14 @@
     <h1>ProdMinds</h1>
     <p>Product Management as a Service for Digital Companies</p>
   </header>
+
+  <section class="intro-video">
+    <h2>Watch Our Intro</h2>
+    <video controls>
+      <source src="intro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
   <section class="about">
     <div class="highlight">
@@ -116,4 +130,5 @@
     &copy; 2025 ProdMinds. All rights reserved.
   </footer>
 </body>
-</html>
+</html> 
+ 
